@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+
+    <title>首页</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Toastr style -->
+    <link href="css/plugins/toastr/toastr.min.css" rel="stylesheet">
+
+    <!-- Gritter -->
+    <link href="js/plugins/gritter/jquery.gritter.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Mainly scripts -->
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Flot -->
+    <script src="js/plugins/flot/jquery.flot.js"></script>
+    <script src="js/plugins/flot/jquery.flot.tooltip.min.js"></script>
+    <script src="js/plugins/flot/jquery.flot.spline.js"></script>
+    <script src="js/plugins/flot/jquery.flot.resize.js"></script>
+    <script src="js/plugins/flot/jquery.flot.pie.js"></script>
+
+    <!-- Peity -->
+    <script src="js/plugins/peity/jquery.peity.min.js"></script>
+    <script src="js/demo/peity-demo.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    <script src="js/plugins/pace/pace.min.js"></script>
+
+    <!-- jQuery UI -->
+    <script src="js/plugins/jquery-ui/jquery-ui.min.js"></script>
+
+    <!-- GITTER -->
+    <script src="js/plugins/gritter/jquery.gritter.min.js"></script>
+
+    <!-- Sparkline -->
+    <script src="js/plugins/sparkline/jquery.sparkline.min.js"></script>
+
+    <!-- Sparkline demo data  -->
+    <script src="js/demo/sparkline-demo.js"></script>
+
+    <!-- ChartJS-->
+    <script src="js/plugins/chartJs/Chart.min.js"></script>
+
+    <!-- Toastr -->
+    <script src="js/plugins/toastr/toastr.min.js"></script>
+
+</head>
+
+<body>
+<!--这是左边栏 start-->
+<nav class="navbar-default navbar-static-side" role="navigation">
+    <div class="sidebar-collapse">
+        <ul class="nav metismenu" id="side-menu">
+            <li class="nav-header">
+                <div class="dropdown profile-element"> <span>
+                            <img alt="image" class="img-circle" src="img/p1.jpg" style="width: 64px;height: 64px;"/>
+                             </span>
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="clear">
+                                <span class="block m-t-xs">
+                                    <strong class="font-bold">这是谁？</strong>
+                                </span>
+                                <span class="text-muted text-xs block">傻根
+                                    <b class="caret"></b>
+                                </span>
+                            </span>
+                    </a>
+                    <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                        <li><a href="profile.html">第一行</a></li>
+                        <li class="divider"></li>
+                        <li><a href="login.html">走你</a></li>
+                    </ul>
+                </div>
+                <div class="logo-element">
+                    LOGO
+                </div>
+            </li>
+            <li class="active">
+                <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboards</span> <span
+                        class="fa arrow"></span></a>
+                <ul class="nav nav-second-level">
+                    <li><a href="dashboard_4_1.html">Dashboard v.4</a></li>
+                    <li><a href="dashboard_5.html">Dashboard v.5 <span
+                            class="label label-primary pull-right">NEW</span></a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">Graphs</span><span
+                        class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse">
+                    <li><a href="graph_flot.html">Flot Charts</a></li>
+                    <li><a href="graph_peity.html">Peity Charts</a></li>
+                    <li><a href="graph_sparkline.html">Sparkline Charts</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="mailbox.html"><i class="fa fa-envelope"></i> <span class="nav-label">Mailbox </span><span
+                        class="label label-warning pull-right">16/24</span></a>
+                <ul class="nav nav-second-level collapse">
+                    <li><a href="mail_compose.html">Compose email</a></li>
+                    <li><a href="email_template.html">Email templates</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="metrics.html"><i class="fa fa-pie-chart"></i> <span class="nav-label">Metrics</span> </a>
+            </li>
+            <li>
+                <a href="widgets.html"><i class="fa fa-flask"></i> <span class="nav-label">Widgets</span></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">Forms</span><span
+                        class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse">
+                    <li><a href="form_editors.html">Text Editor</a></li>
+                    <li><a href="form_markdown.html">Markdown</a></li>
+                </ul>
+            </li>
+
+
+            <li>
+                <a href="#"><i class="fa fa-flask"></i> <span class="nav-label">UI Elements</span><span
+                        class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse">
+                    <li><a href="tabs.html">Tabs</a></li>
+                    <li><a href="notifications.html">Notifications & Tooltips</a></li>
+                    <li><a href="badges_labels.html">Badges, Labels, Progress</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="grid_options.html"><i class="fa fa-laptop"></i> <span class="nav-label">Grid options</span></a>
+            </li>
+
+            <li>
+                <a href="#"><i class="fa fa-picture-o"></i> <span class="nav-label">Gallery</span><span
+                        class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse">
+                    <li><a href="slick_carousel.html">Slick Carousel</a></li>
+                    <li><a href="carousel.html">Bootstrap Carousel</a></li>
+
+                </ul>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-sitemap"></i> <span class="nav-label">Menu Levels </span><span
+                        class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse">
+                    <li>
+                        <a href="#">Third Level <span class="fa arrow"></span></a>
+                        <ul class="nav nav-third-level">
+                            <li>
+                                <a href="#">Third Level Item</a>
+                            </li>
+                            <li>
+                                <a href="#">Third Level Item</a>
+                            </li>
+                            <li>
+                                <a href="#">Third Level Item</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li><a href="#">Second Level Item</a></li>
+                    <li>
+                        <a href="#">Second Level Item</a></li>
+                    <li>
+                        <a href="#">Second Level Item</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="css_animation.html"><i class="fa fa-magic"></i> <span
+                        class="nav-label">CSS Animations </span><span class="label label-info pull-right">62</span></a>
+            </li>
+            <li class="landing_link">
+                <a target="_blank" href="#"><i class="fa fa-star"></i> <span class="nav-label">Landing Page</span>
+                    <span class="label label-warning pull-right">NEW</span></a>
+            </li>
+            <li class="special_link">
+                <a href="#"><i class="fa fa-database"></i> <span class="nav-label">打包？？</span></a>
+            </li>
+        </ul>
+
+    </div>
+</nav>
+<!--这是左边栏 end-->
+
+<!--这是页面头 start-->
+<div id="page-wrapper" class="gray-bg dashbard-1">
+    <div class="row border-bottom">
+        <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#">
+                    <i class="fa fa-bars"></i> </a>
+                <form role="search" class="navbar-form-custom" action="search_results.html">
+                    <div class="form-group">
+                        <input type="text" placeholder="查点什么 ... ..." class="form-control"
+                               name="top-search" id="top-search">
+                    </div>
+                </form>
+            </div>
+            <ul class="nav navbar-top-links navbar-right">
+                <li>
+                    <span class="m-r-sm text-muted welcome-message">欢迎来到俺们村！</span>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                        <i class="fa fa-envelope"></i> <span class="label label-warning">16</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-messages">
+                        <li>
+                            <div class="dropdown-messages-box">
+                                <a href="profile.html" class="pull-left">
+                                    <img alt="image" class="img-circle" src="img/a7.jpg">
+                                </a>
+                                <div class="media-body">
+                                    <small class="pull-right">46h ago</small>
+                                    <strong>Mike Loreipsum</strong> started following <strong>Monica Smith</strong>.
+                                    <br>
+                                    <small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="text-center link-block">
+                                <a href="mailbox.html">
+                                    <i class="fa fa-envelope"></i> <strong>查看所有消息</strong>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                        <i class="fa fa-bell"></i> <span class="label label-primary">8</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            <a href="mailbox.html">
+                                <div>
+                                    <i class="fa fa-envelope fa-fw"></i> You have 16 messages
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="text-center link-block">
+                                <a href="notifications.html">
+                                    <strong>查看所有的提醒</strong>
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="login.html">
+                        <i class="fa fa-sign-out"></i>退出
+                    </a>
+                </li>
+                <li>
+                    <a class="right-sidebar-toggle">
+                        <i class="fa fa-tasks"></i>
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+    </div>
+    <div id="testLoadPage">
+        <h1 style="color: red">
+            26666666666666
+        </h1>
+    </div>
+</div>
+<!--这是页面头 end-->
+
+<!--这是右下角迷你聊天窗-->
+<!--<div class="small-chat-box fadeInRight animated">
+
+    <div class="heading" draggable="true">
+        <small class="chat-date pull-right">
+            2017年10月12日
+        </small>
+        聊天框
+    </div>
+
+    <div class="content">
+
+        <div class="left">
+            <div class="author-name">
+                翠花
+                <small class="chat-date">
+                    23:32:03
+                </small>
+            </div>
+            <div class="chat-message active">
+                你好，我是翠花
+            </div>
+
+        </div>
+        <div class="right">
+            <div class="author-name">
+                傻根
+                <small class="chat-date">
+                    23:32:04
+                </small>
+            </div>
+            <div class="chat-message">
+                你好，俺是傻根
+            </div>
+        </div>
+        <div class="left">
+            <div class="author-name">
+                狗剩
+                <small class="chat-date">
+                    23:32:05
+                </small>
+            </div>
+            <div class="chat-message active">
+                你们都起开，我才是最帅的
+            </div>
+        </div>
+        <div class="right">
+            <div class="author-name">
+                老根
+                <small class="chat-date">
+                    23:32:06
+                </small>
+            </div>
+            <div class="chat-message">
+                干啥呢！干啥呢！都捣鼓啥呢！
+            </div>
+        </div>
+        <div class="left">
+            <div class="author-name">
+                梁非凡
+                <small class="chat-date">
+                    23:32:07
+                </small>
+            </div>
+            <div class="chat-message active">
+                吔屎啦！梁非凡
+            </div>
+        </div>
+
+
+    </div>
+    <div class="form-chat">
+        <div class="input-group input-group-sm"><input type="text" class="form-control"> <span
+                class="input-group-btn"> <button
+                class="btn btn-primary" type="button">发送
+            </button> </span></div>
+    </div>
+
+</div>-->
+<!--这是右下角迷你聊天窗-->
+
+<!--这是右下角聊天窗的未读信息数-->
+<!--<div id="small-chat">
+
+    <span class="badge badge-warning pull-right">10</span>
+    <a class="open-small-chat">
+        <i class="fa fa-comments"></i>
+
+    </a>
+</div>-->
+<!--这是右下角聊天窗的未读信息数-->
+<!--<div id="right-sidebar">
+    <div class="sidebar-container">
+
+        <ul class="nav nav-tabs navs-3">
+
+            <li class="active"><a data-toggle="tab" href="#tab-1">
+                便签
+            </a></li>
+            <li><a data-toggle="tab" href="#tab-2">
+                规划
+            </a></li>
+            <li class=""><a data-toggle="tab" href="#tab-3">
+                <i class="fa fa-gear"></i>
+            </a></li>
+        </ul>
+
+        <div class="tab-content">
+
+
+            <div id="tab-1" class="tab-pane active">
+
+                <div class="sidebar-title">
+                    <h3><i class="fa fa-comments-o"></i> 最新的消息</h3>
+                    <small><i class="fa fa-tim"></i> 10条新信息</small>
+                </div>
+
+                <div>
+                    <div class="sidebar-message">
+                        <a href="#">
+                            <div class="pull-left text-center">
+                                <img alt="image" class="img-circle message-avatar" src="img/a1.jpg">
+
+                                <div class="m-t-xs">
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                </div>
+                            </div>
+                            <div class="media-body">
+                                There are many variations of passages of Lorem Ipsum available.
+                                <br>
+                                <small class="text-muted">Today 4:21 pm</small>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sidebar-message">
+                        <a href="#">
+                            <div class="pull-left text-center">
+                                <img alt="image" class="img-circle message-avatar" src="img/a2.jpg">
+                            </div>
+                            <div class="media-body">
+                                The point of using Lorem Ipsum is that it has a more-or-less normal.
+                                <br>
+                                <small class="text-muted">Yesterday 2:45 pm</small>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="tab-2" class="tab-pane">
+
+                <div class="sidebar-title">
+                    <h3><i class="fa fa-cube"></i> 最新规划</h3>
+                    <small><i class="fa fa-tim"></i> 14个规划</small>
+                </div>
+
+                <ul class="sidebar-list">
+                    <li>
+                        <a href="#">
+                            <div class="small pull-right m-t-xs">9 hours ago</div>
+                            <h4>Business valuation</h4>
+                            It is a long established fact that a reader will be distracted.
+
+                            <div class="small">Completion with: 22%</div>
+                            <div class="progress progress-mini">
+                                <div style="width: 22%;" class="progress-bar progress-bar-warning"></div>
+                            </div>
+                            <div class="small text-muted m-t-xs">Project end: 4:00 pm - 12.06.2014</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="small pull-right m-t-xs">9 hours ago</div>
+                            <h4>Contract with Company </h4>
+                            Many desktop publishing packages and web page editors.
+
+                            <div class="small">Completion with: 88%</div>
+                            <div class="progress progress-mini">
+                                <div style="width: 88%;" class="progress-bar"></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="label label-primary pull-right">NEW</span>
+                            <h4>The generated</h4>
+                            &lt;!&ndash;<div class="small pull-right m-t-xs">9 hours ago</div>&ndash;&gt;
+                            There are many variations of passages of Lorem Ipsum available.
+                            <div class="small">Completion with: 22%</div>
+                            <div class="small text-muted m-t-xs">Project end: 4:00 pm - 12.06.2014</div>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div id="tab-3" class="tab-pane">
+
+                <div class="sidebar-title">
+                    <h3><i class="fa fa-gears"></i> 设置</h3>
+                    <small><i class="fa fa-tim"></i> You have 14 projects. 10 not completed.</small>
+                </div>
+
+                <div class="setings-item">
+                <span>
+                    Show notifications
+                </span>
+                    <div class="switch">
+                        <div class="onoffswitch">
+                            <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example">
+                            <label class="onoffswitch-label" for="example">
+                                <span class="onoffswitch-inner"></span>
+                                <span class="onoffswitch-switch"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="setings-item">
+                <span>
+                    Disable Chat
+                </span>
+                    <div class="switch">
+                        <div class="onoffswitch">
+                            <input type="checkbox" name="collapsemenu" checked class="onoffswitch-checkbox"
+                                   id="example2">
+                            <label class="onoffswitch-label" for="example2">
+                                <span class="onoffswitch-inner"></span>
+                                <span class="onoffswitch-switch"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-content">
+                    <h4>设置：</h4>
+                    <div class="small">
+                        这里是设置的描述
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+</div>-->
+
+</body>
+</html>
