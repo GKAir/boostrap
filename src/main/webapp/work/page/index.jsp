@@ -53,7 +53,6 @@
     <script src="${pageContext.servletContext.contextPath}/work/style/js/plugins/chartJs/Chart.min.js"></script>
     <!-- Toastr -->
     <script src="${pageContext.servletContext.contextPath}/work/style/js/plugins/toastr/toastr.min.js"></script>
-    <script src="${pageContext.servletContext.contextPath}/work/page/left.js"></script>
 </head>
 
 <body>

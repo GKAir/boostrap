@@ -7,7 +7,7 @@
         http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 	<!-- 配置包扫描器 -->
-    <context:component-scan base-package="cn.jsdz.buyer.controller"/>
+    <context:component-scan base-package="com.test.demo.controller"/>
 	<!-- 配置注解驱动 -->
 	<mvc:annotation-driven />
     <!-- 加载java的配置文件 -->
@@ -45,4 +45,5 @@
 	<mvc:resources location="pages/js/" mapping="/js/**"/>
 	<mvc:resources location="pages/fonts/" mapping="/fonts/**"/>
 	<mvc:resources location="pages/img/" mapping="/img/**"/>
+	<mvc:resources location="work/style/" mapping="work/style/**"/>
 </beans>
