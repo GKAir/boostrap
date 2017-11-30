@@ -4,7 +4,9 @@ import com.test.demo.pojo.ManagerUser;
 import com.test.demo.pojo.ManagerUserExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public interface ManagerUserMapper {
     int countByExample(ManagerUserExample example);
 
